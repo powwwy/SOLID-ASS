@@ -32,6 +32,7 @@ public class WithLSP {
       }
    }
 
+
    public static void main(String[] args) {
       Shape rect = new Rectangle(5, 10);
       System.out.println("Rectangle area: " + rect.getArea()); // 50
