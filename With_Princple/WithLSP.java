@@ -2,10 +2,12 @@ package With_Princple;
 
 public class WithLSP {
 
+   //Parent class
    interface Shape {
       int getArea();
    }
 
+   // Base Class
    static class Rectangle implements Shape {
       protected int width;
       protected int height;
@@ -20,6 +22,7 @@ public class WithLSP {
       }
    }
 
+   //Base Class
    static class Square implements Shape {
       private int side;
 
@@ -35,12 +38,11 @@ public class WithLSP {
 
    public static void main(String[] args) {
       Shape rect = new Rectangle(5, 10);
-      System.out.println("Rectangle area: " + rect.getArea()); // 50
+      System.out.println("Rectangle area: " + rect.getArea()); //5*10= 50
 
       Shape sq = new Square(5);
-      System.out.println("Square area: " + sq.getArea()); // 25
+      System.out.println("Square area: " + sq.getArea()); //5*5= 25
 
-      // No surprises: Both behave as expected with the common Shape interface
    }
 }
 
