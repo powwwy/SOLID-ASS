@@ -1,12 +1,10 @@
 package Without_Principle;
 
-// Single interface doing too much
 interface Shapes {
     double calculateArea();
     double calculatePerimeter();
 }
 
-// Triangle class forced to implement both methods (still valid here, but imagine a line shape)
 class Triangle implements Shapes {
     private double a, b, c;
 
@@ -31,7 +29,7 @@ class Triangle implements Shapes {
     }
 }
 
-// Main class
+
 public class TriangleCalculator {
     public static void main(String[] args) {
         Triangle triangle = new Triangle(3, 4, 5);
