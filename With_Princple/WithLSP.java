@@ -7,7 +7,7 @@ public class WithLSP {
       int getArea();
    }
 
-   // Base Class
+   // Sub Class
    static class Rectangle implements Shape {
       protected int width;
       protected int height;
@@ -22,7 +22,7 @@ public class WithLSP {
       }
    }
 
-   //Base Class
+   //Sub Class
    static class Square implements Shape {
       private int side;
 
